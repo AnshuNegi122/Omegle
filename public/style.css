@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #121212;
+  color: white;
+}
+video {
+  width: 45%;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
