@@ -3,9 +3,12 @@ body {
   text-align: center;
   background: #121212;
   color: white;
+  margin: 0;
+  padding: 20px;
 }
 video {
   width: 45%;
+  max-width: 90vw;
   margin: 10px;
   border: 2px solid white;
   border-radius: 10px;
@@ -13,4 +16,5 @@ video {
 button {
   margin-top: 20px;
   padding: 10px 20px;
+  font-size: 16px;
 }

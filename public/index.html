@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Omegle Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Video Chat</h1>
-  <video id="localVideo" autoplay muted></video>
-  <video id="remoteVideo" autoplay></video>
+  <video id="localVideo" autoplay muted playsinline></video>
+  <video id="remoteVideo" autoplay playsinline></video>
   <button id="next">Next</button>
 
   <script src="/socket.io/socket.io.js"></script>

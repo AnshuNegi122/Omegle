@@ -11,9 +11,8 @@ const waitingUsers = [];
 app.use(express.static('public'));
 
 io.on('connection', socket => {
-  console.log('New user connected:', socket.id);
+  console.log('New user:', socket.id);
 
-  // Match with another waiting user
   if (waitingUsers.length > 0) {
     const partner = waitingUsers.pop();
     socket.partner = partner;
@@ -42,6 +41,7 @@ io.on('connection', socket => {
   });
 });
 
-server.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
